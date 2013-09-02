@@ -17,11 +17,9 @@
   <script type="text/ceci">
     function FormData(hash) {
       // Turn the hash into a sequence (which should be in the right order, but we'll assume the current order)
-      console.log("this =", this);
       this.seq = [];
       var that = this;
       Object.keys(hash).forEach(function (key) {
-        console.log("pushing", key, hash[key]);
         that.seq.push(hash[key]);
       });
     };

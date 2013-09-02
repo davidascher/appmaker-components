@@ -49,6 +49,7 @@
           }
           this.objectName = val.name;
           try {
+            console.log(val.editor);
             if (val.editor) {
               this.addField(val)
             } else if (val.length) {
